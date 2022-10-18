@@ -1,0 +1,151 @@
+{
+  "id": "348022ea-c280-4290-a246-3be17789066c",
+  "version": "2.0",
+  "name": "practical2",
+  "url": "https://www.redbus.in",
+  "tests": [{
+    "id": "a6a57240-cd1b-42e9-b188-520c69d02f68",
+    "name": "redbus",
+    "commands": [{
+      "id": "2e04e8c9-6c93-41c0-847e-cb4650770e18",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fdfc719-6e7c-4078-81e2-dcb62fb51f39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "784x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cde2fe4-a86b-4e08-a8b9-9cd7cd7c7fbd",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Book Bus Travels, AC Volvo Bus, rPool & Bus Hire - redBus India",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9893191-9adf-4f00-923e-7d9e4e01827d",
+      "comment": "",
+      "command": "click",
+      "target": "id=src",
+      "targets": [
+        ["id=src", "id"],
+        ["css=#src", "css:finder"],
+        ["xpath=//input[@id='src']", "xpath:attributes"],
+        ["xpath=//section[@id='search']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60ad13c4-c5cf-4256-84be-b192846ca342",
+      "comment": "",
+      "command": "type",
+      "target": "id=src",
+      "targets": [
+        ["id=src", "id"],
+        ["css=#src", "css:finder"],
+        ["xpath=//input[@id='src']", "xpath:attributes"],
+        ["xpath=//section[@id='search']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Mumbai"
+    }, {
+      "id": "988280a3-80b4-47de-8851-2c99ff812bd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=dest",
+      "targets": [
+        ["id=dest", "id"],
+        ["css=#dest", "css:finder"],
+        ["xpath=//input[@id='dest']", "xpath:attributes"],
+        ["xpath=//section[@id='search']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db4a1a1f-712b-4998-ad9e-e50279055426",
+      "comment": "",
+      "command": "type",
+      "target": "id=dest",
+      "targets": [
+        ["id=dest", "id"],
+        ["css=#dest", "css:finder"],
+        ["xpath=//input[@id='dest']", "xpath:attributes"],
+        ["xpath=//section[@id='search']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Pune"
+    }, {
+      "id": "25e6eaff-7f05-42c3-9a64-e152fa4a3837",
+      "comment": "",
+      "command": "click",
+      "target": "id=onward_cal",
+      "targets": [
+        ["id=onward_cal", "id"],
+        ["css=#onward_cal", "css:finder"],
+        ["xpath=//input[@id='onward_cal']", "xpath:attributes"],
+        ["xpath=//section[@id='search']/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3044c236-4101-4059-bb79-015095eef4be",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_btn",
+      "targets": [
+        ["id=search_btn", "id"],
+        ["css=#search_btn", "css:finder"],
+        ["xpath=//button[@id='search_btn']", "xpath:attributes"],
+        ["xpath=//section[@id='search']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search Buses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "243449e4-3023-4b86-9511-241934939182",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#\\31 9441778 .travels",
+      "targets": [
+        ["css=#\\31 9441778 .travels", "css:finder"],
+        ["xpath=//li[@id='19441778']/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Neeta tours and travels"
+    }, {
+      "id": "74ee0759-53b7-4db4-8dbb-e0f5b6485fbd",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#\\31 9441778 .column-seven .f-19",
+      "targets": [
+        ["css=#\\31 9441778 .column-seven .f-19", "css:finder"],
+        ["xpath=//li[@id='19441778']/div/div/div/div[6]/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'350')]", "xpath:innerText"]
+      ],
+      "value": "price"
+    }, {
+      "id": "0b317011-f5d3-47df-9104-b25a474156a4",
+      "comment": "",
+      "command": "echo",
+      "target": "${price}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b30c2dd6-904c-49f1-8c0f-f695f58c3d5d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6a57240-cd1b-42e9-b188-520c69d02f68"]
+  }],
+  "urls": ["https://www.redbus.in/"],
+  "plugins": []
+}
